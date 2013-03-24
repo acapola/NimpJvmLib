@@ -1,0 +1,6 @@
+package uk.co.nimp.util;
+
+public class Timestamp {
+  public static String BUILD_TIME = "`BUILD_TIME`";
+  public static String TIMESTAMP = "`TIMESTAMP`";
+}

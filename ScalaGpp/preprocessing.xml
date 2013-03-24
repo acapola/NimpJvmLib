@@ -1,0 +1,13 @@
+<project name="PreProcessingAntTargets" default="ScalaGpp" basedir=".">
+    <!--Preprocess sources before build: make sure to set this target as "Before Compilation"-->
+    <target name="ScalaGpp">
+        <exec dir="." executable="ScalaGpp">
+            <arg line="prj:ScalaGppPreBuild.ScalaGppPrj"/>
+        </exec>
+    </target>
+    <!--<target name="ScalaPp">
+        <exec dir="/" executable="ScalaPp">
+            <arg line="/home/seb/dev/NimpSwTools/src/uk/co/nimp/swtools/scalaPp/timestamp.scala.ScalaPp"/>
+        </exec>
+    </target>-->
+</project>

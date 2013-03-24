@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="AtolUtilities">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../jvmPlatform/Libs/AtolUtilities" />
+      <root url="file://$PROJECT_DIR$/../../jvmPlatform/Libs/AtolUtilities" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../jvmPlatform/Libs/AtolUtilities/javadoc" />
+    </JAVADOC>
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../jvmPlatform/Libs/AtolUtilities" recursive="false" />
+  </library>
+</component>

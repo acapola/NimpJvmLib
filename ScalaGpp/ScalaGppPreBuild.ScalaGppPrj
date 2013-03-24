@@ -1,0 +1,28 @@
+
+val VERSION="0.1"
+def generateTimestamp() = {
+      import java.util.Date
+      import java.text.SimpleDateFormat
+      val date=new Date //now
+      var dateFormat = new SimpleDateFormat
+      dateFormat.applyPattern("yyyy-MM-dd - HH:mm:ss")
+      val BUILD_TIME=dateFormat.format(date)
+      dateFormat.applyPattern("yyyyMMddHHmmss")
+      val TIMESTAMP=dateFormat.format(date)
+    (BUILD_TIME, TIMESTAMP)
+}
+val r=generateTimestamp()
+val BUILD_TIME=r._1
+val TIMESTAMP=r._2
+
+val DIST_FILE_BASE_NAME = "NimpScalaLib-"+VERSION+"-"+TIMESTAMP
+
+
+scalaGppPrjEnv.todo=Array(
+  "../src/main/java/uk/co/nimp/util/Timestamp.java.ScalaGpp")
+
+//SCALAGPP_PROCESS_FILES
+
+scalaGppPrjEnv.workDirectoryName = "../"
+scalaGppPrjEnv.todo=Array(
+  "Num.ScalaGpp.java")
