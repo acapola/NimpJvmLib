@@ -1,2 +1,3 @@
 NimpJvmLib
 ==========
+Library to deal with boolean functions, permutation...
